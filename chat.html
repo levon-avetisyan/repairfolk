@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Repairfolk</title>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <!--Jquery-->
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <!--Bootstrap 4-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <!-- Scrollbar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <!--Slick-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!--Styles-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="page-chat">
+<header class="chat-page-header">
+    <div class="chat-header-logo">
+        Repairfolk
+    </div>
+    <div class="dropdown select-dropdown">
+        <a class="chat-header-settings dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+           aria-haspopup="true"
+           aria-expanded="false">
+            <span class="user-name">Chauffina Carr</span>
+            <span class="chevron">
+                <i class="fa fa-chevron-down grey-chevron-down"></i>
+            </span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li>
+                <a class="dropdown-item" href="#">My Acoount</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="#">Log out</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<main>
+    <aside class="chat-aside">
+        <header class="chat-aside-header">
+            <div class="convers-actions d-flex h-100 align-items-center justify-content-between">
+                <div class="convers-filter d-flex">
+                    <img src="./img/conversation.svg">
+                    <div class="select-dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span id="selectedConversFilter">All Conversation</span>
+                            <span class="chevron">
+                                <i class="fa fa-chevron-down grey-chevron-down"></i>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href="#">All Conversation</a></li>
+                            <li><a href="#">Active</a></li>
+                            <li><a href="#">Archived</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="add-convers-action">
+                    <a href="#" class="icon-link"><img src="./img/addconvers.svg"></a>
+                </div>
+            </div>
+        </header>
+        <div class="aside-content">
+            <div class="recent-chats">
+                <ul class="list-unstyled">
+                    <li>
+                        <div class="chat-details">
+                            <div class="request-name">Request Name</div>
+                            <div class="message-preview">
+                                Lorem ipsum
+                            </div>
+                        </div>
+                        <div class="chat-date">
+                            1d
+                        </div>
+                    </li>
+                    <li class="active">
+                        <div class="chat-details">
+                            <div class="request-name">Request Name</div>
+                            <div class="message-preview">
+                                Lorem ipsum
+                            </div>
+                        </div>
+                        <div class="chat-date">
+                            1w
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chat-details">
+                            <div class="request-name">Request Name</div>
+                            <div class="message-preview">
+                                Lorem ipsum
+                            </div>
+                        </div>
+                        <div class="chat-date">
+                            1w
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chat-details">
+                            <div class="request-name">Request Name</div>
+                            <div class="message-preview">
+                                Lorem ipsum
+                            </div>
+                        </div>
+                        <div class="chat-date">
+                            1w
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <section class="chat-view">
+        <header class="chat-header">
+            <div class="aside-toggler d-xl-none">
+                <div class="toggle dark">
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="request-name">
+                Request name
+            </div>
+            <div class="chat-header-actions">
+                <ul class="list-inline list-unstyled mb-0">
+                    <li class="list-inline-item mr-3">
+                        <a href="#" class="icon-link">
+                            <img src="./img/chat-header-action-1.svg">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="icon-link">
+                            <img src="./img/chat-header-action-2.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section class="conversation">
+            <div class="chat-messages">
+                <div class="outgoing-msg user-msg">
+                    <div class="msg-user-avatar">
+                        <img src="./img/chat-person.png">
+                    </div>
+                    <div class="username-msg">
+                        <div class="msg-user-name">
+                            Ashley Meyer
+                        </div>
+                        <div class="msg-bubble">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        </div>
+                    </div>
+                </div>
+                <div class="incoming-msg user-msg">
+                    <div class="msg-user-avatar">
+                        <img src="./img/chat-person.png">
+                    </div>
+                    <div class="username-msg">
+                        <div class="msg-user-name">
+                            Ashley Meyer
+                        </div>
+                        <div class="msg-bubble">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        </div>
+                    </div>
+                </div>
+                <div class="incoming-msg user-msg offer-msg">
+                    <div class="msg-user-avatar">
+                        <img src="./img/chat-person.png">
+                    </div>
+                    <div class="username-msg">
+                        <div class="msg-user-name">
+                            Ashley Meyer
+                        </div>
+                        <div class="msg-bubble bubble-offer">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="offer-name">
+                                        Offer Name
+                                    </div>
+                                    <div class="offer-price">
+                                        $60
+                                    </div>
+                                </li>
+                                <li>
+                                    Here's your Offer
+                                </li>
+                                <li class="offer-includes">Your Offer includes</li>
+                                <li>
+                                    <div class="offer-service-name">
+                                        Lorem Ipsum
+                                    </div>
+                                    <div class="offer-service-price">
+                                        $5
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="offer-action">
+                                <a class="btn-green-primary">
+                                    Pay Online
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="incoming-msg user-msg">
+                    <div class="msg-user-avatar">
+                        <img src="./img/chat-person.png">
+                    </div>
+                    <div class="username-msg">
+                        <div class="msg-user-name">
+                            Ashley Meyer
+                        </div>
+                        <div class="msg-bubble">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        </div>
+                    </div>
+                </div>
+                <div class="outgoing-msg user-msg">
+                    <div class="msg-user-avatar">
+                        <img src="./img/chat-person.png">
+                    </div>
+                    <div class="username-msg">
+                        <div class="msg-user-name">
+                            Ashley Meyer
+                        </div>
+                        <div class="msg-bubble">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        </div>
+                    </div>
+                </div>
+                <div class="incoming-msg user-msg">
+                    <div class="msg-user-avatar">
+                        <img src="./img/chat-person.png">
+                    </div>
+                    <div class="username-msg">
+                        <div class="msg-user-name">
+                            Ashley Meyer
+                        </div>
+                        <div class="msg-bubble">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        </div>
+                    </div>
+                </div>
+                <div class="outgoing-msg user-msg">
+                    <div class="msg-user-avatar">
+                        <img src="./img/chat-person.png">
+                    </div>
+                    <div class="username-msg">
+                        <div class="msg-user-name">
+                            Ashley Meyer
+                        </div>
+                        <div class="msg-bubble">
+                            Lorem Ipsum
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="message-input">
+            <div class="attachments-dropbox">
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item">
+                        <img src="./img/attach1.png">
+                        <div class="remove-attachment">
+                            <img src="./img/removeattach.svg">
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="./img/attach2.png">
+                        <div class="remove-attachment">
+                            <img src="./img/removeattach.svg">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="input-wrap">
+                <input type="text" placeholder="Type your message here" class="input-msg">
+            </div>
+            <div class="input-actions">
+                <a class="d-flex icon-link" id="addAttachments" href="#"><img src="./img/attach.svg"></a>
+                <a href="" class="d-flex send-action action-text-green">Send</a>
+            </div>
+        </section>
+    </section>
+</main>
+</body>
+<script>
+    $(document).ready(function () {
+        // Drop down act as a select
+        $(".dropdown-menu li a").on('click', function () {
+            $('#selectedConversFilter').html($(this).text());
+        });
+
+        // Simple bar init
+        new SimpleBar($('.conversation')[0]);
+
+        // Add attachments
+        $('#addAttachments').on('click', function () {
+            $('.attachments-dropbox').toggleClass('show');
+            $('.conversation').toggleClass('attachments-visible');
+        });
+
+        // Aside Toggler
+        $('.aside-toggler').on("click", function () {
+            $('.toggle').toggleClass('clicked');
+            $('.chat-aside').toggleClass('open');
+            $('.chat-view').toggleClass('slide');
+        });
+    });
+</script>
+</html>
+

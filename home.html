@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Repairfolk</title>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <!--Jquery-->
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <!--Bootstrap 4-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <!--Slick-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!--Scripts-->
+    <script src="./js/scripts.js"></script>
+    <!--Styles-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="page-home" id="body">
+<main>
+    <nav class="navbar navbar-expand-lg" id="siteNav">
+        <div class="container">
+            <a class="navbar-brand pl-3">Repairfolk</a>
+            <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"
+                 aria-controls="navbarNav"
+                 aria-expanded="false"
+                 aria-label="Toggle navigation">
+                <div class="toggle">
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse pr-lg-3" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btn-nav-button align-items-start align-items-lg-center pl-3 pl-lg-0"
+                           data-toggle="modal"
+                           data-target="#loginModal"
+                           href="#">Log in</a></li>
+                    <li class="nav-item ml-lg-3">
+                        <a class="nav-link btn-nav-button align-items-start align-items-lg-center pl-3 pl-lg-0"
+                           id="navLinkRegister"
+                           data-toggle="modal"
+                           data-target="#loginModal"
+                           href="#">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="hero" class="page-section hero-section">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="hero-content h-100 d-flex flex-column justify-content-center align-items-start">
+                        <h1>Repairfolk</h1>
+                        <h3>The fastest and friendliest way to arrange your appliance repair</h3>
+                        <p><span><img src="./img/location-icon.svg"></span>in Glendale, LA and 50 miles nearby</p>
+                        <a href="#" data-toggle="modal"
+                           data-target="#loginModal" class="btn-green-primary">Get in touch</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-4 col-sm-3 col-md-2">
+                    <div class="partner-logo">
+                        <img src="./img/partner (1).png" alt="Repairfolk partner">
+                    </div>
+                </div>
+                <div class="col-4 col-sm-3 col-md-2">
+                    <div class="partner-logo">
+                        <img src="./img/partner (2).png" alt="Repairfolk partner">
+                    </div>
+                </div>
+                <div class="col-4 col-sm-3 col-md-2">
+                    <div class="partner-logo">
+                        <img src="./img/partner (3).png" alt="Repairfolk partner">
+                    </div>
+                </div>
+                <div class="col-4 col-sm-3 col-md-2">
+                    <div class="partner-logo">
+                        <img src="./img/partner (4).png" alt="Repairfolk partner">
+                    </div>
+                </div>
+                <div class="col-4 col-sm-3 offset-sm-2 offset-md-0 col-md-2">
+                    <div class="partner-logo">
+                        <img src="./img/partner (5).png" alt="Repairfolk partner">
+                    </div>
+                </div>
+                <div class="col-4 col-sm-3 offset-sm-2 offset-md-0 col-md-2">
+                    <div class="partner-logo">
+                        <img src="./img/partner (6).png" alt="Repairfolk partner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="statistics">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="stats mb-5 mb-md-0">
+                        <h2>People we helped over <span class="text-green">3</span> years</h2>
+                        <hr>
+                        <h3><span class="text-green">1200</span> services to <span class="text-green">486</span> clients
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="row">
+                        <div class="col-12 col-lg-5">
+                            <div class="more-stats mb-5 mb-lg-0">
+                                <div class="stats-number">
+                                    <h2>50%</h2>
+                                    <div class="icon-person"><img src="./img/person.png"></div>
+                                </div>
+                                <h4>used our services in a single year</h4>
+                            </div>
+                        </div>
+                        <div class="d-none d-lg-block col-lg-2">
+                            <div class="slash-wrap">
+                                <div class="big-slash"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5">
+                            <div class="more-stats">
+                                <div class="stats-number">
+                                    <h2>30%</h2>
+                                    <div class="icon-person"><img src="./img/person-2.png"></div>
+                                </div>
+                                <h4>came back to us each year after receiving help</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="repair-types">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <h1 class="section-title">We can repair these things for you</h1>
+                    <h4 class="section-subtitle">Lorem ipsum</h4>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="arrow-wrap d-flex align-items-center justify-content-end h-100">
+                        <div class="nav-arrow arrow-prev rounded-circle"><i class="fa fa-chevron-left"></i></div>
+                        <div class="nav-arrow arrow-next rounded-circle"><i class="fa fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-repair-types">
+            <div class="carousel-slick responsive">
+                <div class="slick-item"><img src="./img/carousel-item (1).png" alt="RepairFolk: Type of product">
+                    <p>Ovens & Stoves</p>
+                </div>
+                <div class="slick-item"><img src="./img/carousel-item (2).png" alt="RepairFolk: Type of product">
+                    <p>Refrigerators</p>
+                </div>
+                <div class="slick-item"><img src="./img/carousel-item (3).png" alt="RepairFolk: Type of product">
+                    <p>Wash-machines & Dryers</p>
+                </div>
+                <div class="slick-item"><img src="./img/carousel-item (1).png" alt="RepairFolk: Type of product">
+                    <p>Ovens & Stoves</p>
+                </div>
+                <div class="slick-item"><img src="./img/carousel-item (2).png" alt="RepairFolk: Type of product">
+                    <p>Refrigerators</p>
+                </div>
+                <div class="slick-item"><img src="./img/carousel-item (3).png" alt="RepairFolk: Type of product">
+                    <p>Wash-machines & Dryers</p>
+                </div>
+                <div class="slick-item"><img src="./img/carousel-item (1).png" alt="RepairFolk: Type of product">
+                    <p>Ovens & Stoves</p>
+                </div>
+                <div class="slick-item"><img src="./img/carousel-item (2).png" alt="RepairFolk: Type of product">
+                    <p>Refrigerators</p>
+                </div>
+                <div class="slick-item"><img src="./img/carousel-item (3).png" alt="RepairFolk: Type of product">
+                    <p>Wash-machines & Dryers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="how-it-works">
+        <div class="container">
+            <h1 class="section-title">
+                How It Works
+            </h1>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="how-it-works-item mb-5 mb-lg-0">
+                        <div class="rounded-circle"></div>
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's of the printing and typesetting</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="how-it-works-item mb-5 mb-lg-0">
+                        <div class="rounded-circle"></div>
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's of the printing and typesetting</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="how-it-works-item">
+                        <div class="rounded-circle"></div>
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's of the printing and typesetting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <h1 class="section-title">
+                        Quick Work Done Faster On <span class="text-green">Repairfolk</span>
+                    </h1>
+                    <div class="features-list">
+                        <ul class="list-unstyled">
+                            <li>
+                                <h3><span><img src="./img/feature-check.svg"></span>We’re Here For You 24/7</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's of the printing and typesetting</p>
+                            </li>
+                            <li>
+                                <h3><span><img src="./img/feature-check.svg"></span>Know The Price Upfront</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's of the printing and typesetting</p>
+                            </li>
+                            <li>
+                                <h3><span><img src="./img/feature-check.svg"></span>Client Protection</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's of the printing and typesetting</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-12 col-md-6">
+                    <div class="features-image-wrap">
+                        <img src="./img/features.jpg" alt="Repairfolk: Features">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <h1 class="section-title">Client Testimonials</h1>
+                    <h4 class="section-subtitle">See What Our Customers Have To Say About Us</h4>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="arrow-wrap arrow-wrap-reviews d-flex align-items-center justify-content-end h-100 mt-4 mt-sm-0">
+                        <div class="nav-arrow arrow-prev arrow-prev-reviews rounded-circle"><i
+                                    class="fa fa-chevron-left"></i></div>
+                        <div class="nav-arrow arrow-next arrow-next-reviews rounded-circle"><i
+                                    class="fa fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-testimonials">
+            <div class="slick-testimonials">
+                <div class="slick-item">
+                    <div class="reviewer-image"></div>
+                    <h4>Oliver Thomason</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's of the printing and typesetting</p>
+                </div>
+                <div class="slick-item">
+                    <div class="reviewer-image"></div>
+                    <h4>Oliver Thomason</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's</p>
+                </div>
+                <div class="slick-item">
+                    <div class="reviewer-image"></div>
+                    <h4>Fabio Fontai</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's of the printing and typesetting industry.</p>
+                </div>
+                <div class="slick-item">
+                    <div class="reviewer-image"></div>
+                    <h4>Ava Wright</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's of the printing and typesetting</p>
+                </div>
+                <div class="slick-item">
+                    <div class="reviewer-image"></div>
+                    <h4>Oliver Thomason</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's</p>
+                </div>
+                <div class="slick-item">
+                    <div class="reviewer-image"></div>
+                    <h4>Fabio Fontai</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's of the printing and typesetting industry.</p>
+                </div>
+                <div class="slick-item">
+                    <div class="reviewer-image"></div>
+                    <h4>Ava Wright</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's of the printing and typesetting</p>
+                </div>
+                <div class="slick-item">
+                    <div class="reviewer-image"></div>
+                    <h4>Oliver Thomason</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's</p>
+                </div>
+                <div class="slick-item">
+                    <div class="reviewer-image"></div>
+                    <h4>Fabio Fontai</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's of the printing and typesetting industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="find-repairman">
+        <div class="find-repairman-content">
+            <h1>
+                Find repairman For Your needs Today
+            </h1>
+            <p>We've got you covered for all your electronics repair needs</p>
+            <a href="" class="btn-green-primary">
+                Get Started
+            </a>
+        </div>
+        <hr>
+    </section>
+    <footer>
+        <div class="footer-content d-flex justify-content-between">
+            <div class="footer-logo-policies">
+                <h1 class="footer-logo">Repairfolk</h1>
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item">
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li class="list-inline-item">|</li>
+                    <li class="list-inline-item">
+                        <a href="">Terms of Service</a>
+                    </li>
+                    <li class="list-inline-item">|</li>
+                    <li class="list-inline-item">
+                        <a href="">&copy Repairfolk. All rights reserved</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-scroll-top">
+                <a class="d-flex" href=""><i class="fa fa-chevron-up"></i></a>
+            </div>
+        </div>
+    </footer>
+</main>
+<!-- Modal Login -->
+<div class="modal fade modal-login"
+     id="loginModal"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"
+         role="document">
+        <div class="modal-content">
+            <div class="modal-header d-flex flex-row align-items-start justify-content-between border-bottom-0">
+                <div class="login-modal-header-actions">
+                    <ul class="list-group tab-list-group list-unstyled list-inline" role="tablist">
+                        <li class="list-inline-item">
+                            <a class="list-group-item list-group-item-action active"
+                               id="loginTabLink"
+                               data-toggle="list"
+                               href="#login-tab"
+                               role="tab">Login</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="list-group-item list-group-item-action"
+                               id="registerTabLink"
+                               data-toggle="list"
+                               href="#register-tab"
+                               role="tab"
+                               aria-controls="profile">Register</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-header-action">
+                    <a class="icon-link" data-dismiss="modal" aria-label="Close">
+                        <img src="./img/close.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active"
+                         id="login-tab"
+                         role="tabpanel"
+                         aria-labelledby="list-home-list">
+                        <form class="form-repairfolk">
+                            <div class="form-group">
+                                <label for="email">
+                                    Email
+                                </label>
+                                <input type="email"
+                                       name="email"
+                                       class="form-control"
+                                       id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">
+                                    Password
+                                </label>
+                                <input type="password"
+                                       name="password"
+                                       class="form-control"
+                                       id="password">
+                            </div>
+                            <div class="form-group d-flex justify-content-end modal-form-action">
+                                <a href="#" class="btn-green-primary">Login</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade"
+                         id="register-tab"
+                         role="tabpanel"
+                         aria-labelledby="list-profile-list">
+                        <form class="form-repairfolk">
+                            <div class="form-group">
+                                <label for="emailRegister">
+                                    Email
+                                </label>
+                                <input type="email"
+                                       name="email-register"
+                                       class="form-control"
+                                       id="emailRegister">
+                            </div>
+                            <div class="form-group">
+                                <label for="passwordRegister">
+                                    Password
+                                </label>
+                                <input type="password"
+                                       name="password-register"
+                                       class="form-control"
+                                       id="passwordRegister">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword">
+                                    Confirm password
+                                </label>
+                                <input type="password"
+                                       name="confirm-password"
+                                       class="form-control"
+                                       id="confirmPassword">
+                            </div>
+                            <div class="form-group d-flex justify-content-end modal-form-action">
+                                <a href="#" class="btn-green-primary">Create an Account</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('.carousel-slick').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            infinite: true,
+            appendArrows: $('.arrow-wrap'),
+            prevArrow: $('.arrow-prev'),
+            nextArrow: $('.arrow-next'),
+            centerPadding: '15px',
+            customPaging: '15px',
+            draggable: true,
+            centerMode: true,
+            adaptiveHeight: false,
+            responsive: [{
+                breakpoint: 1600,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+            }, {
+                breakpoint: 1135,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            }, {
+                breakpoint: 876,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }, {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+        });
+        $('.slick-testimonials').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            infinite: true,
+            appendArrows: $('.arrow-wrap-reviews'),
+            prevArrow: $('.arrow-prev-reviews'),
+            nextArrow: $('.arrow-next-reviews'),
+            centerPadding: '15px',
+            customPaging: '15px',
+            draggable: true,
+            centerMode: true,
+            adaptiveHeight: false,
+            responsive: [{
+                breakpoint: 1600,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+            }, {
+                breakpoint: 1135,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            }, {
+                breakpoint: 876,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }, {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+        });
+    })
+</script>
+</body>
+</html>

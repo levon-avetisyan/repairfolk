@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Repairfolk</title>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <!--Jquery-->
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <!--Bootstrap 4-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!--Styles-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<main>
+    <nav class="navbar navbar-expand-lg pl-3" id="siteNav">
+        <ul class="list-inline list-unstyled mb-0">
+            <li class="list-inline-item">
+                <a class="nav-link btn-green-secondary"
+                   data-toggle="modal"
+                   data-target="#newRequestModal"
+                   href="#">Create a New Request</a></li>
+            <li class="list-inline-item">
+                <a class="nav-link btn-green-secondary"
+                   data-toggle="modal"
+                   data-target="#clientOrderDetails"
+                   href="#">Client Order Details</a>
+            </li>
+            <li class="list-inline-item">
+                <a class="nav-link btn-green-secondary"
+                   data-toggle="modal"
+                   data-target="#clientOfferDetails"
+                   href="#">Client Offer Details</a>
+            </li>
+        </ul>
+    </nav>
+</main>
+
+<!-- Modal Login -->
+<div class="modal fade modal-small modal-new-request"
+     id="newRequestModal"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"
+         role="document">
+        <div class="modal-content">
+            <div class="modal-header d-flex flex-row align-items-start
+            justify-content-between border-bottom-0">
+                <div class="login-modal-header-actions">
+                    <div class="title-wrap">
+                        <h5 class="modal-title">How can we help you?</h5>
+                    </div>
+                </div>
+                <div class="modal-header-action">
+                    <a class="icon-link" data-dismiss="modal" aria-label="Close">
+                        <img src="./img/close.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="modal-body">
+                <form action="" class="form-repairfolk">
+                    <div class="form-group">
+                        <textarea class="form-control request-textarea"
+                                  placeholder="Type your question or a description of the problem you are trying to solve here"></textarea>
+                    </div>
+                    <div class="form-group d-flex justify-content-end">
+                        <a href="#" class="action-text-green">Send</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Client Order Details-->
+<div class="modal fade modal-client-order-details"
+     id="clientOrderDetails"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"
+         role="document">
+        <div class="modal-content">
+            <div class="modal-header d-flex flex-row align-items-center justify-content-between">
+                <div class="title-wrap">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Offer Details</h5>
+                    <p class="modal-subtitle">
+                        Buyer: Chauffina Carr
+                        <span class="bar-break">|</span>
+                        <span class="offer-date">Apr 28, 10:57 PM</span>
+                    </p>
+                </div>
+                <div class="modal-header-action">
+                    <a class="icon-link" data-dismiss="modal" aria-label="Close">
+                        <img src="./img/close.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="row no-gutters">
+                    <div class="col-12 col-lg-8">
+                        <div class="bubble-offer">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="offer-name">
+                                        Offer Name
+                                    </div>
+                                    <div class="offer-price">
+                                        $60
+                                    </div>
+                                </li>
+                                <li>
+                                    Here's your Offer
+                                </li>
+                                <li class="offer-includes">
+                                    <div>Your Offer includes</div>
+                                </li>
+                                <li>
+                                    <div class="offer-service-name">
+                                        Lorem Ipsum
+                                    </div>
+                                    <div class="offer-service-price">
+                                        $5
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="offer-service-name">
+                                        Lorem Ipsum
+                                    </div>
+                                    <div class="offer-service-price">
+                                        $5
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="offer-service-name">
+                                        Lorem Ipsum
+                                    </div>
+                                    <div class="offer-service-price">
+                                        $5
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="bubble-offer">
+                            <ul class="list-unstyled no-li-br">
+                                <li>
+                                    <div class="offer-service-name">
+                                        Subtotal
+                                    </div>
+                                    <div class="offer-service-price">
+                                        $75
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="offer-service-name">
+                                        Processing Fee
+                                    </div>
+                                    <div class="offer-service-price">
+                                        $5
+                                    </div>
+                                </li>
+                                <li class="offer-includes">
+                                    <div class="offer-name">
+                                        Total
+                                    </div>
+                                    <div class="offer-price">
+                                        $80
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="offer-action">
+                                <div class="choose-payment-method d-flex justify-content-start">
+                                    <div class="paypal">
+                                        <div class="checkbox classic">
+                                            <input id="checkboxPaypal"
+                                                   class="checkbox-custom"
+                                                   name="payment-method"
+                                                   type="radio">
+                                            <span class="box">
+                                                <i class="fa fa-check"></i>
+                                            </span>
+                                            <label for="checkboxPaypal"
+                                                   class="checkbox-custom-label">
+                                                <img src="./img/paypal.png">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="stripe">
+                                        <div class="checkbox classic">
+                                            <input id="checkboxStripe"
+                                                   class="checkbox-custom"
+                                                   name="payment-method"
+                                                   type="radio">
+                                            <span class="box">
+                                                <i class="fa fa-check"></i>
+                                            </span>
+                                            <label for="checkboxStripe" class="checkbox-custom-label">
+                                                <img src="./img/stripe.png">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn-green-primary">
+                                    Process to Payment
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Client Offer Details-->
+<div class="modal fade modal-client-offer-details"
+     id="clientOfferDetails"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"
+         role="document">
+        <div class="modal-content">
+            <div class="modal-header d-flex flex-row align-items-center justify-content-between">
+                <div class="title-wrap">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Offer Details</h5>
+                    <p class="modal-subtitle" >
+                        Buyer: Chauffina Carr
+                        <span class="bar-break">|</span>
+                        <span class="offer-date">Apr 28, 10:57 PM</span>
+                    </p>
+                </div>
+                <div class="modal-header-action" >
+                    <a class="icon-link" data-dismiss="modal" aria-label="Close">
+                        <img src="./img/close.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="row no-gutters">
+                    <div class="col-12 col-lg-8">
+                        <div class="bubble-offer">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="offer-name">
+                                        Offer Name
+                                    </div>
+                                    <div class="offer-price">
+                                        $60
+                                    </div>
+                                </li>
+                                <li>
+                                    Here's your Offer
+                                </li>
+                                <li class="offer-includes">
+                                    <div>Your Offer includes</div>
+                                </li>
+                                <li>
+                                    <div class="offer-service-name">
+                                        Lorem Ipsum
+                                    </div>
+                                    <div class="offer-service-price">
+                                        $5
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="offer-service-name">
+                                        Lorem Ipsum
+                                    </div>
+                                    <div class="offer-service-price">
+                                        $5
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="offer-service-name">
+                                        Lorem Ipsum
+                                    </div>
+                                    <div class="offer-service-price">
+                                        $5
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="bubble-offer">
+                            <ul class="list-unstyled no-li-br">
+                                <li>
+                                    <div class="offer-service-name">
+                                        Subtotal
+                                    </div>
+                                    <div class="offer-service-price">
+                                        $75
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="offer-service-name">
+                                        Processing Fee
+                                    </div>
+                                    <div class="offer-service-price">
+                                        $5
+                                    </div>
+                                </li>
+                                <li class="offer-includes">
+                                    <div class="offer-name">
+                                        Total
+                                    </div>
+                                    <div class="offer-price">
+                                        $80
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="offer-action">
+                                <a class="btn-green-primary">
+                                    Process to Payment
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

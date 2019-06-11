@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Repairfolk</title>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <!--Jquery-->
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <!--Bootstrap 4-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <!-- Scrollbar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <!--Slick-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--Select-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!--Styles-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="page-chat" >
+<header class="chat-page-header">
+    <div class="chat-header-logo">
+        Repairfolk
+    </div>
+    <div class="dropdown select-dropdown">
+        <a class="chat-header-settings dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+           aria-haspopup="true"
+           aria-expanded="false">
+            <span class="user-name">Chauffina Carr</span>
+            <span class="chevron">
+                <i class="fa fa-chevron-down grey-chevron-down"></i>
+            </span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li>
+                <a class="dropdown-item" href="#">My Acoount</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="#">Log out</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<main>
+    <aside class="chat-aside">
+        <header class="chat-aside-header">
+            <div class="convers-actions d-flex h-100 align-items-center justify-content-between">
+                <div class="convers-filter d-flex">
+                    <img src="./img/conversation.svg">
+                    <div class="select-dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span id="selectedConversFilter">All Conversation</span>
+                            <span class="chevron">
+                                <i class="fa fa-chevron-down grey-chevron-down"></i>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href="#">All Conversation</a></li>
+                            <li><a href="#">Active</a></li>
+                            <li><a href="#">Archived</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="add-convers-action">
+                    <a href="#"><img src="./img/addconvers.svg"></a>
+                </div>
+            </div>
+        </header>
+        <div class="aside-content">
+            <div class="recent-chats">
+                <ul class="list-unstyled">
+                    <li>
+                        <div class="chat-details">
+                            <div class="request-name">Request Name</div>
+                            <div class="message-preview">
+                                Lorem ipsum
+                            </div>
+                        </div>
+                        <div class="chat-date">
+                            1d
+                        </div>
+                    </li>
+                    <li class="active">
+                        <div class="chat-details">
+                            <div class="request-name">Request Name</div>
+                            <div class="message-preview">
+                                Lorem ipsum
+                            </div>
+                        </div>
+                        <div class="chat-date">
+                            1w
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chat-details">
+                            <div class="request-name">Request Name</div>
+                            <div class="message-preview">
+                                Lorem ipsum
+                            </div>
+                        </div>
+                        <div class="chat-date">
+                            1w
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chat-details">
+                            <div class="request-name">Request Name</div>
+                            <div class="message-preview">
+                                Lorem ipsum
+                            </div>
+                        </div>
+                        <div class="chat-date">
+                            1w
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <section class="chat-view">
+        <header class="chat-header">
+            <div class="aside-toggler d-xl-none">
+                <div class="toggle dark">
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="request-name">
+                Request name
+            </div>
+            <div class="chat-header-actions d-flex align-items-center justify-content-end">
+                <a href="#" class="btn-green-secondary"
+                   data-toggle="modal"
+                   data-target="#createOfferModal">Create an offer</a>
+                <div class="ellipsis-menu">
+                    <div class="dropdown select-dropdown bubble-right">
+                        <a class="chat-header-settings dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+                           aria-haspopup="true"
+                           aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li>
+                                <a class="dropdown-item" href="#">Archive request</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="conversation">
+            <div class="chat-messages">
+                <div class="outgoing-msg user-msg offer-msg">
+                    <div class="username-msg">
+                        <div class="msg-bubble bubble-offer">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="offer-name">
+                                        Offer Name
+                                    </div>
+                                    <div class="offer-price">
+                                        $60
+                                    </div>
+                                </li>
+                                <li class="order-status">
+                                    <p>Chauffina Carr<span class="ml-2">accepted the offer</span></p>
+                                </li>
+                                <li class="offer-includes">Your Offer includes</li>
+                                <li>
+                                    <div class="offer-service-name">
+                                        Lorem Ipsum
+                                    </div>
+                                    <div class="offer-service-price">
+                                        $5
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="offer-action">
+                                <a class="btn-green-primary inverse"
+                                   data-toggle="modal"
+                                   data-target="#viewOfferModal">
+                                    View Offer
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outgoing-msg user-msg feedback-msg">
+                    <div class="username-msg">
+                        <div class="feedback-request-wrap">
+                            <h3>Please Send a Feedback</h3>
+                            <div class="feedback-request-form">
+                                <h4>Feedback</h4>
+                                <form action="">
+                                    <div class="form-group">
+                                        <textarea placeholder="Type your feedback here"
+                                                  name="customer-review"
+                                                  class="form-control"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-sm-6">
+                                                <h5>Overall Experience</h5>
+                                                <p>How would you rate your overall experience with our worker?</p>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="h-100 d-flex justify-content-lg-end justify-content-start align-items-center">
+                                                    <ul class="list-unstyled list-inline rate-stars-list mt-3 mt-lg-3">
+                                                        <li class="list-inline-item">
+                                                            <a href="#">
+                                                                <i class="fas fa-star"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#">
+                                                                <i class="far fa-star"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#">
+                                                                <i class="far fa-star"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#">
+                                                                <i class="far fa-star"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#">
+                                                                <i class="far fa-star"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-action">
+                                        <a href="#" class="btn-green-primary">
+                                            Send
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="message-input">
+            <div class="attachments-dropbox">
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item">
+                        <img src="./img/attach1.png">
+                        <div class="remove-attachment">
+                            <img src="./img/removeattach.svg">
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="./img/attach2.png">
+                        <div class="remove-attachment">
+                            <img src="./img/removeattach.svg">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="input-wrap">
+                <input type="text" placeholder="Type your message here" class="input-msg">
+            </div>
+            <div class="input-actions">
+                <a class="d-flex" id="chooseQuickResponse" href="#"><img src="./img/media.svg"></a>
+                <a href="" class="d-flex send-action action-text-green">Send</a>
+            </div>
+        </section>
+    </section>
+</main>
+
+<!-- Modal View Offer -->
+<div class="modal fade"
+     id="viewOfferModal"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"
+         role="document">
+        <div class="modal-content">
+            <div class="modal-header d-flex flex-row align-items-center justify-content-between">
+                <div class="title-wrap">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Offer Details</h5>
+                    <p class="modal-subtitle">
+                        Buyer: Chauffina Carr
+                        <span class="bar-break">|</span>
+                        <span class="offer-date">Apr 28, 10:57 PM</span>
+                    </p>
+                </div>
+                <div class="modal-header-action">
+                    <a class="icon-link" data-dismiss="modal" aria-label="Close">
+                        <img src="./img/close.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="row no-gutters">
+                    <div class="col-12 col-lg-8">
+                        <div class="bubble-offer">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="offer-name">
+                                        Offer Name
+                                    </div>
+                                    <div class="offer-price">
+                                        $60
+                                    </div>
+                                </li>
+                                <li>
+                                    Here's your Offer
+                                </li>
+                                <li class="offer-includes">
+                                    <div>Your Offer includes</div>
+                                </li>
+                                <li>
+                                    <div class="offer-service-name">
+                                        Lorem Ipsum
+                                    </div>
+                                    <div class="offer-service-price">
+                                        $5
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="offer-service-name">
+                                        Lorem Ipsum
+                                    </div>
+                                    <div class="offer-service-price">
+                                        $5
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="offer-service-name">
+                                        Lorem Ipsum
+                                    </div>
+                                    <div class="offer-service-price">
+                                        $5
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="bubble-offer">
+                            <ul class="list-unstyled no-li-br">
+                                <li>
+                                    <div class="offer-service-name">
+                                        Subtotal
+                                    </div>
+                                    <div class="offer-service-price">
+                                        $75
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="offer-service-name">
+                                        Processing Fee
+                                    </div>
+                                    <div class="offer-service-price">
+                                        $5
+                                    </div>
+                                </li>
+                                <li class="offer-includes">
+                                    <div class="offer-name">
+                                        Total
+                                    </div>
+                                    <div class="offer-price">
+                                        $80
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="offer-action">
+                                <a class="btn-green-primary">
+                                    Update an Offer
+                                </a>
+                                <a class="btn-green-secondary">
+                                    Download Invoice
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Create Offer -->
+<div class="modal fade"
+     id="createOfferModal"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"
+         role="document">
+        <div class="modal-content">
+            <div class="modal-header d-flex flex-row align-items-center justify-content-between">
+                <div class="title-wrap">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Create an Offer</h5>
+                    <p class="modal-subtitle">
+                        Buyer: Chauffina Carr
+                        <span class="bar-break">|</span>
+                        <span class="offer-date">Apr 28, 10:57 PM</span>
+                    </p>
+                </div>
+                <div class="modal-header-action">
+                    <a class="icon-link" data-dismiss="modal" aria-label="Close">
+                        <img src="./img/close.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="row no-gutters">
+                    <div class="col-12 col-sm-6">
+                        <div class="bubble-offer">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="offer-name">
+                                        Repairman visit
+                                    </div>
+                                    <div class="offer-price">
+                                        <div class="checkbox">
+                                            <input id="checkbox"
+                                                   class="checkbox-custom"
+                                                   name="checkbox-1"
+                                                   type="checkbox">
+                                            <label for="checkbox"
+                                                   class="checkbox-custom-label">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="offer-name">
+                                        Offer Name
+                                    </div>
+                                    <div class="offer-price">
+                                        <div class="checkbox">
+                                            <input id="checkbox-1"
+                                                   class="checkbox-custom"
+                                                   name="checkbox-1"
+                                                   type="checkbox">
+                                            <label for="checkbox-1"
+                                                   class="checkbox-custom-label">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="offer-name">
+                                        Offer Name
+                                    </div>
+                                    <div class="offer-price">
+                                        <div class="checkbox">
+                                            <input id="checkbox-2"
+                                                   class="checkbox-custom"
+                                                   name="checkbox-2"
+                                                   type="checkbox">
+                                            <label for="checkbox-2"
+                                                   class="checkbox-custom-label">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="offer-name">
+                                        Offer Name
+                                    </div>
+                                    <div class="offer-price">
+                                        <div class="checkbox">
+                                            <input id="checkbox-3"
+                                                   class="checkbox-custom"
+                                                   name="checkbox-3"
+                                                   type="checkbox">
+                                            <label for="checkbox-3"
+                                                   class="checkbox-custom-label">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="offer-name">
+                                        Offer Name
+                                    </div>
+                                    <div class="offer-price">
+                                        <div class="checkbox">
+                                            <input id="checkbox-4"
+                                                   class="checkbox-custom"
+                                                   name="checkbox-4"
+                                                   type="checkbox">
+                                            <label for="checkbox-4"
+                                                   class="checkbox-custom-label">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="bubble-offer">
+                            <ul class="list-unstyled no-li-br">
+                                <li>
+                                    <div class="offer-name">
+                                        Offer Name
+                                    </div>
+                                    <div class="offer-price">
+                                        <div class="checkbox">
+                                            <input id="checkbox-5"
+                                                   class="checkbox-custom"
+                                                   name="checkbox-5"
+                                                   type="checkbox">
+                                            <label for="checkbox-5"
+                                                   class="checkbox-custom-label">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="offer-name">
+                                        Offer Name
+                                    </div>
+                                    <div class="offer-price">
+                                        <div class="checkbox">
+                                            <input id="checkbox-6"
+                                                   class="checkbox-custom"
+                                                   name="checkbox-6"
+                                                   type="checkbox">
+                                            <label for="checkbox-6"
+                                                   class="checkbox-custom-label">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="offer-name">
+                                        Offer Name
+                                    </div>
+                                    <div class="offer-price">
+                                        <div class="checkbox">
+                                            <input id="checkbox-7"
+                                                   class="checkbox-custom"
+                                                   name="checkbox-7"
+                                                   type="checkbox">
+                                            <label for="checkbox-7"
+                                                   class="checkbox-custom-label">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="offer-name">
+                                        Offer Name
+                                    </div>
+                                    <div class="offer-price">
+                                        <div class="checkbox">
+                                            <input id="checkbox-8"
+                                                   class="checkbox-custom"
+                                                   name="checkbox-8"
+                                                   type="checkbox">
+                                            <label for="checkbox-8"
+                                                   class="checkbox-custom-label">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="offer-name">
+                                        Offer Name
+                                    </div>
+                                    <div class="offer-price">
+                                        <div class="checkbox">
+                                            <input id="checkbox-9"
+                                                   class="checkbox-custom"
+                                                   name="checkbox-9"
+                                                   type="checkbox">
+                                            <label for="checkbox-9"
+                                                   class="checkbox-custom-label">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-action">
+                    <a data-toggle="modal"
+                       data-target="#createOfferNextModal"
+                       data-dismiss="modal"
+                       aria-label="Close" href="#" class="btn-green-primary">Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Create Offer Next -->
+<div class="modal fade"
+     id="createOfferNextModal"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"
+         role="document">
+        <div class="modal-content">
+            <div class="modal-header d-flex flex-row align-items-center justify-content-between">
+                <div class="title-wrap">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Creaet A Offer</h5>
+                    <p class="modal-subtitle">
+                        Buyer: Chauffina Carr
+                        <span class="bar-break">|</span>
+                        <span class="offer-date">Apr 28, 10:57 PM</span>
+                    </p>
+                </div>
+                <div class="modal-header-action">
+                    <a class="icon-link" data-dismiss="modal" aria-label="Close">
+                        <img src="./img/close.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="row no-gutters">
+                    <div class="col-12 col-sm-8">
+                        <div class="bubble-offer">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="offer-name">
+                                        Repairman visit
+                                        <p class="font-weight-bold text-green m-0">$60</p>
+                                    </div>
+                                    <div class="offer-price d-flex align-items-center">
+                                        <a href="#" class="icon-link" data-toggle="modal"
+                                           data-target="#editService">
+                                            <img src="./img/edit.svg">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input class="input-comments"
+                                           placeholder="Type your comments here">
+                                </li>
+                                <li class="offer-includes">Your Offer includes</li>
+                                <li>
+                                    <div class="offer-service-name">
+                                        Service Name
+                                        <p class="text-green mb-0">$5</p>
+                                    </div>
+                                    <div class="offer-service-price">
+                                        <a href="#" class="icon-link" data-toggle="modal"
+                                           data-target="#editService">
+                                            <img src="./img/edit.svg">
+                                        </a>
+                                        <a href="#" class="icon-link ml-3">
+                                            <img src="./img/delete.svg">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="d-flex action-text-green m-auto"
+                                       data-toggle="modal"
+                                       data-target="#addNewService">+ Add a new service</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="bubble-offer">
+                            <ul class="list-unstyled no-li-br">
+                                <li>
+                                    <div class="offer-service-name">
+                                        Subtotal
+                                    </div>
+                                    <div class="offer-service-price">
+                                        $75
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="offer-service-name">
+                                        Processing Fee
+                                    </div>
+                                    <div class="offer-service-price">
+                                        $5
+                                    </div>
+                                </li>
+                                <li class="offer-includes">
+                                    <div class="offer-name">
+                                        Total
+                                    </div>
+                                    <div class="offer-price">
+                                        $80
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="offer-action">
+                                <a class="btn-green-primary">
+                                    Create an Offer
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Add New Service -->
+<div class="modal fade modal-small"
+     id="addNewService"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"
+         role="document">
+        <div class="modal-content">
+            <div class="modal-header d-flex flex-row align-items-center justify-content-between border-bottom-0">
+                <div class="title-wrap">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Add a New Service</h5>
+                </div>
+                <div class="modal-header-action">
+                    <a class="icon-link" data-dismiss="modal" aria-label="Close">
+                        <img src="./img/close.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="modal-body">
+                <form class="form-repairfolk">
+                    <div class="form-group">
+                        <label for="serviceName">
+                            Service name
+                        </label>
+                        <input type="text"
+                               name="service-name"
+                               class="form-control"
+                               id="serviceName">
+                    </div>
+                    <div class="form-group position-relative">
+                        <label for="price">
+                            Price
+                        </label>
+                        <input type="text"
+                               name="price"
+                               class="form-control price-input"
+                               id="price">
+                        <i class="fas fa-dollar-sign text-green price-icon"></i>
+                    </div>
+                    <div class="form-group mb-0 d-flex justify-content-end">
+                        <a href="" class="action-text-green">Add</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Edit Service -->
+<div class="modal fade modal-small"
+     id="editService"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"
+         role="document">
+        <div class="modal-content">
+            <div class="modal-header d-flex flex-row align-items-center justify-content-between border-bottom-0">
+                <div class="title-wrap">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Edit Service</h5>
+                </div>
+                <div class="modal-header-action">
+                    <a class="icon-link" data-dismiss="modal" aria-label="Close">
+                        <img src="./img/close.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="modal-body">
+                <form class="form-repairfolk">
+                    <div class="form-group">
+                        <label for="serviceName">
+                            Service name
+                        </label>
+                        <input type="text"
+                               name="service-name"
+                               class="form-control"
+                               id="serviceName">
+                    </div>
+                    <div class="form-group position-relative">
+                        <label for="price">
+                            Price
+                        </label>
+                        <input type="text"
+                               name="price"
+                               class="form-control price-input"
+                               id="price">
+                        <i class="fas fa-dollar-sign text-green price-icon"></i>
+                    </div>
+                    <div class="form-group mb-0 d-flex justify-content-end">
+                        <a href="#" class="action-text-green">Save</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+    $(document).ready(function () {
+        // Drop down act as a select
+        $(".dropdown-menu li a").on('click', function () {
+            $('#selectedConversFilter').html($(this).text());
+        });
+
+        // Simple bar init
+        new SimpleBar($('.conversation')[0]);
+
+        // Aside Toggler
+        $('.aside-toggler').on("click", function () {
+            $('.toggle').toggleClass('clicked');
+            $('.chat-aside').toggleClass('open');
+            $('.chat-view').toggleClass('slide');
+        });
+    });
+
+    (function ($) {
+
+        var Defaults = $.fn.select2.amd.require('select2/defaults');
+
+        $.extend(Defaults.defaults, {
+            searchInputPlaceholder: 'Search'
+        });
+
+        var SearchDropdown = $.fn.select2.amd.require('select2/dropdown/search');
+
+        var _renderSearchDropdown = SearchDropdown.prototype.render;
+
+        SearchDropdown.prototype.render = function (decorated) {
+
+            // invoke parent method
+            var $rendered = _renderSearchDropdown.apply(this, Array.prototype.slice.apply(arguments));
+
+            this.$search.attr('placeholder', this.options.get('searchInputPlaceholder'));
+
+            return $rendered;
+        };
+
+    })(window.jQuery);
+</script>
+</html>
+
